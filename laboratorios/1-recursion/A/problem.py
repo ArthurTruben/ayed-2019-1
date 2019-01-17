@@ -3,7 +3,10 @@ import json
 
 # TODO Complete!!
 def reverse(text):
-    return text
+    if len(text)==1:
+        return text
+    else:
+        return (text[len(text)-1]+ reverse(text[0:len(text)-1]))
 
 
 if __name__ == '__main__':
